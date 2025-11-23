@@ -1,0 +1,113 @@
+﻿@model AdvancedTodoLearningCards.ViewModels.BulkImportViewModel
+
+@{
+    ViewData["Title"] = "Bulk Import Cards";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card-custom shadow-custom">
+                <div class="card-header-gradient">
+                    <h2 class="mb-0">
+                        <i class="fas fa-file-import me-2"></i>
+                        Bulk Import Cards
+                    </h2>
+                </div>
+                <div class="card-body p-4">
+
+                    <div class="alert alert-info mb-4">
+                        <h5 class="alert-heading">
+                            <i class="fas fa-info-circle me-2"></i>CSV Format Instructions
+                        </h5>
+                        <p class="mb-2">Your CSV file should have the following format:</p>
+                        <pre class="mb-0" style="background: white; padding: 10px; border-radius: 5px;">Title,Content,Tags (semicolon-separated),Difficulty
+
+Example:
+What is SM-2?,SuperMemo 2 algorithm for spaced repetition,Algorithm;Learning,Medium
+Active Recall,Testing yourself improves memory,Study;Psychology,Easy</pre>
+                    </div>
+
+                    <form asp-action="BulkImport" method="post" enctype="multipart/form-data">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                        <div class="mb-4">
+                            <label asp-for="CsvFile" class="form-label-custom">
+                                <i class="fas fa-upload me-2"></i>Upload CSV File
+                            </label>
+                            <input asp-for="CsvFile" class="form-control form-control-custom" type="file" accept=".csv" />
+                            <span asp-validation-for="CsvFile" class="text-danger"></span>
+                            <small class="form-text text-muted">Select a .csv file to import</small>
+                        </div>
+
+                        <div class="text-center my-3">
+                            <span class="badge bg-secondary">OR</span>
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="CsvContent" class="form-label-custom">
+                                <i class="fas fa-keyboard me-2"></i>Paste CSV Content
+                            </label>
+                            <textarea asp-for="CsvContent" class="form-control form-control-custom"
+                                      rows="10" placeholder="Paste your CSV content here..."></textarea>
+                            <span asp-validation-for="CsvContent" class="text-danger"></span>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            <strong>Note:</strong> All imported cards will be assigned initial review schedules automatically.
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary-custom flex-fill">
+                                <i class="fas fa-file-import me-2"></i>Import Cards
+                            </button>
+                            <a asp-action="Index" class="btn btn-outline-secondary flex-fill">
+                                <i class="fas fa-times me-2"></i>Cancel
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Sample CSV Download -->
+            <div class="card-custom mt-4 p-4">
+                <h5 class="fw-bold mb-3">
+                    <i class="fas fa-download me-2"></i>Sample CSV Template
+                </h5>
+                <p class="text-muted mb-3">Download a sample CSV file to see the correct format:</p>
+                <textarea class="form-control mb-3" rows="5" readonly>Title,Content,Tags,Difficulty
+What is Spaced Repetition?,A learning technique that uses increasing intervals,Learning;Memory,Easy
+Ebbinghaus Forgetting Curve,Shows how information is lost over time,Psychology;Research,Medium
+SM-2 Algorithm,SuperMemo 2 algorithm for optimal scheduling,Algorithm;Technical,Hard</textarea>
+                <button class="btn btn-outline-primary" onclick="downloadSampleCsv()">
+                    <i class="fas fa-download me-2"></i>Download Sample
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+                function downloadSampleCsv() {
+                    const csvContent = `Title,Content,Tags,Difficulty
+        What is Spaced Repetition?,A learning technique that uses increasing intervals,Learning;Memory,Easy
+        Ebbinghaus Forgetting Curve,Shows how information is lost over time,Psychology;Research,Medium
+        SM-2 Algorithm,SuperMemo 2 algorithm for optimal scheduling,Algorithm;Technical,Hard
+        Active Recall,Testing yourself strengthens memory pathways,Study;Technique,Easy
+        Leitner System,Card box system for spaced repetition,System;Method,Medium`;
+
+                    const blob = new Blob([csvContent], { type: 'text/csv' });
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'sample-learning-cards.csv';
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                    a.remove();
+                }
+    </script>
+}

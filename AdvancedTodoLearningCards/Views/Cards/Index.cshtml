@@ -1,0 +1,134 @@
+﻿@model AdvancedTodoLearningCards.ViewModels.CardListViewModel
+
+@{
+    ViewData["Title"] = "My Cards";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="fw-bold">
+            <i class="fas fa-layer-group me-2"></i>
+            My Learning Cards
+        </h1>
+        <div>
+            <a asp-action="Create" class="btn btn-primary-custom">
+                <i class="fas fa-plus me-2"></i>New Card
+            </a>
+            <a asp-action="BulkImport" class="btn btn-outline-secondary">
+                <i class="fas fa-file-import me-2"></i>Import CSV
+            </a>
+        </div>
+    </div>
+
+    <!-- Search and Filter -->
+    <div class="card-custom p-3 mb-4">
+        <form asp-action="Index" method="get" class="row g-3">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input type="text" name="search" value="@Model.SearchTerm"
+                           class="form-control" placeholder="Search cards...">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <select name="tag" class="form-select">
+                    <option value="">All Tags</option>
+                    @foreach (var tag in Model.TagStatistics)
+                    {
+                        <option value="@tag.Key" selected="@(Model.SelectedTag == tag.Key)">
+                            @tag.Key (@tag.Value)
+                        </option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary w-100">
+                    <i class="fas fa-filter me-1"></i>Filter
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Cards Grid -->
+    @if (Model.Cards.Any())
+    {
+        <div class="row g-4">
+            @foreach (var card in Model.Cards)
+            {
+                <div class="col-md-6 col-lg-4">
+                    <div class="learning-card-item">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title-custom mb-0">@card.Title</h5>
+                            <span class="badge badge-custom badge-@card.Difficulty.ToString().ToLower()">
+                                @card.Difficulty
+                            </span>
+                        </div>
+
+                        <p class="card-content-preview mb-3">
+                            @(card.Content.Length > 100 ? card.Content.Substring(0, 100) + "..." : card.Content)
+                        </p>
+
+                        @if (card.Tags.Any())
+                        {
+                            <div class="mb-3">
+                                @foreach (var tag in card.Tags)
+                                {
+                                    <span class="tag">@tag</span>
+                                }
+                            </div>
+                        }
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <small class="text-muted">
+                                <i class="fas fa-sync-alt me-1"></i>
+                                Reviews: @card.ReviewCount
+                            </small>
+                            @if (card.NextReviewAt.HasValue)
+                            {
+                                <small class="@(card.IsDueToday ? "text-danger fw-bold" : "text-muted")">
+                                    <i class="fas fa-clock me-1"></i>
+                                    @if (card.IsDueToday)
+                                    {
+                                        <span>Due Now!</span>
+                                    }
+                                    else
+                                    {
+                                        <span>@card.NextReviewAt.Value.ToString("MMM dd")</span>
+                                    }
+                                </small>
+                            }
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <a asp-action="Details" asp-route-id="@card.Id"
+                               class="btn btn-sm btn-outline-primary flex-fill">
+                                <i class="fas fa-eye"></i> View
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@card.Id"
+                               class="btn btn-sm btn-outline-secondary flex-fill">
+                                <i class="fas fa-edit"></i> Edit
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@card.Id"
+                               class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="text-center py-5">
+            <i class="fas fa-inbox fa-4x text-muted mb-3"></i>
+            <h3 class="text-muted">No cards found</h3>
+            <p class="text-secondary mb-4">Start your learning journey by creating your first card!</p>
+            <a asp-action="Create" class="btn btn-primary-custom">
+                <i class="fas fa-plus me-2"></i>Create Your First Card
+            </a>
+        </div>
+    }
+</div>

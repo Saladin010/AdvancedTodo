@@ -1,0 +1,116 @@
+﻿@model AdvancedTodoLearningCards.ViewModels.ProfileViewModel
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card-custom text-center p-4">
+                <div class="mb-3">
+                    <div class="bg-gradient-primary rounded-circle mx-auto d-flex align-items-center justify-content-center"
+                         style="width: 120px; height: 120px;">
+                        <i class="fas fa-user fa-4x text-white"></i>
+                    </div>
+                </div>
+                <h3 class="fw-bold mb-1">@Model.Username</h3>
+                <p class="text-muted mb-3">@Model.Email</p>
+
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary-custom">
+                        <i class="fas fa-edit me-2"></i>Edit Profile
+                    </button>
+                    <button class="btn btn-outline-secondary">
+                        <i class="fas fa-key me-2"></i>Change Password
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card-custom mb-4">
+                <div class="card-header-gradient">
+                    <h4 class="mb-0">
+                        <i class="fas fa-info-circle me-2"></i>
+                        Account Information
+                    </h4>
+                </div>
+                <div class="card-body p-4">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <label class="text-muted small mb-1">Username</label>
+                            <p class="fw-bold">@Model.Username</p>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="text-muted small mb-1">Email Address</label>
+                            <p class="fw-bold">@Model.Email</p>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="text-muted small mb-1">Member Since</label>
+                            <p class="fw-bold">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                @Model.MemberSince.ToString("MMMM dd, yyyy")
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="text-muted small mb-1">Last Login</label>
+                            <p class="fw-bold">
+                                <i class="fas fa-clock me-1"></i>
+                                @if (Model.LastLogin.HasValue)
+                                {
+                                    @Model.LastLogin.Value.ToString("MMMM dd, yyyy HH:mm")
+                                }
+                                else
+                                {
+                                    <span>Never</span>
+                                }
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-custom">
+                <div class="card-header-gradient">
+                    <h4 class="mb-0">
+                        <i class="fas fa-chart-bar me-2"></i>
+                        Learning Statistics
+                    </h4>
+                </div>
+                <div class="card-body p-4">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="stats-card">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <div class="stats-value">@Model.TotalCards</div>
+                                        <div class="stats-label">Total Cards</div>
+                                    </div>
+                                    <i class="fas fa-layer-group fa-3x" style="color: var(--primary-color); opacity: 0.2;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="stats-card">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <div class="stats-value" style="color: var(--success-color);">@Model.TotalReviews</div>
+                                        <div class="stats-label">Total Reviews</div>
+                                    </div>
+                                    <i class="fas fa-check-circle fa-3x" style="color: var(--success-color); opacity: 0.2;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 text-center">
+                        <a asp-controller="Dashboard" asp-action="Index" class="btn btn-outline-primary">
+                            <i class="fas fa-chart-line me-2"></i>View Full Dashboard
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

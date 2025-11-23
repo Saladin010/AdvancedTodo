@@ -1,0 +1,120 @@
+﻿@model AdvancedTodoLearningCards.ViewModels.UpcomingReviewsViewModel
+
+@{
+    ViewData["Title"] = "Upcoming Reviews";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="fw-bold">
+            <i class="fas fa-calendar-alt me-2"></i>
+            Upcoming Reviews
+        </h1>
+        <a asp-action="Session" class="btn btn-primary-custom">
+            <i class="fas fa-graduation-cap me-2"></i>Start Review Now
+        </a>
+    </div>
+
+    @if (Model.Reviews.Any())
+    {
+        var groupedReviews = Model.Reviews.GroupBy(r => r.NextReviewAt.Date);
+
+        @foreach (var dateGroup in groupedReviews.OrderBy(g => g.Key))
+        {
+            <div class="card-custom mb-4">
+                <div class="card-header-gradient">
+                    <h4 class="mb-0">
+                        <i class="fas fa-calendar-day me-2"></i>
+                        @dateGroup.Key.ToString("dddd, MMMM dd, yyyy")
+                        <span class="badge bg-white text-primary ms-2">@dateGroup.Count() cards</span>
+                    </h4>
+                </div>
+                <div class="card-body p-0">
+                    <div class="list-group list-group-flush">
+                        @foreach (var review in dateGroup.OrderBy(r => r.NextReviewAt))
+                        {
+                            <div class="list-group-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="flex-grow-1">
+                                        <h5 class="mb-1 fw-bold">@review.Title</h5>
+                                        <small class="text-muted">
+                                            <i class="fas fa-clock me-1"></i>
+                                            @review.NextReviewAt.ToString("HH:mm")
+
+                                            @if (review.DaysUntilReview == 0)
+                                            {
+                                                <span class="badge bg-danger ms-2">Due Today!</span>
+                                            }
+                                            else if (review.DaysUntilReview == 1)
+                                            {
+                                                <span class="badge bg-warning ms-2">Tomorrow</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge bg-info ms-2">In @review.DaysUntilReview days</span>
+                                            }
+                                        </small>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <span class="badge badge-custom badge-@review.Difficulty.ToString().ToLower()">
+                                            @review.Difficulty
+                                        </span>
+                                        <a asp-controller="Cards" asp-action="Details" asp-route-id="@review.CardId"
+                                           class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- Summary Statistics -->
+        <div class="row g-3 mt-4">
+            <div class="col-md-4">
+                <div class="stats-card">
+                    <div class="text-center">
+                        <h2 class="stats-value">@Model.Reviews.Count</h2>
+                        <div class="stats-label">Total Upcoming</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stats-card">
+                    <div class="text-center">
+                        <h2 class="stats-value" style="color: var(--danger-color);">
+                            @Model.Reviews.Count(r => r.DaysUntilReview == 0)
+                        </h2>
+                        <div class="stats-label">Due Today</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stats-card">
+                    <div class="text-center">
+                        <h2 class="stats-value" style="color: var(--warning-color);">
+                            @Model.Reviews.Count(r => r.DaysUntilReview == 1)
+                        </h2>
+                        <div class="stats-label">Due Tomorrow</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="text-center py-5">
+            <i class="fas fa-check-circle fa-5x text-success mb-4"></i>
+            <h2 class="fw-bold mb-3">All Caught Up!</h2>
+            <p class="lead text-secondary mb-4">
+                You have no upcoming reviews scheduled. Keep up the great work!
+            </p>
+            <a asp-controller="Cards" asp-action="Create" class="btn btn-primary-custom">
+                <i class="fas fa-plus me-2"></i>Create New Card
+            </a>
+        </div>
+    }
+</div>

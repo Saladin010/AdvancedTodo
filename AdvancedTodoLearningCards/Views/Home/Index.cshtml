@@ -1,0 +1,124 @@
+﻿@* @{ *@
+@*     ViewData["Title"] = "Home Page"; *@
+@* } *@
+
+@* <div class="text-center"> *@
+@*     <h1 class="display-4">Welcome</h1> *@
+@*     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+@* </div> *@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="hero-section">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 fade-in">
+                <h1 class="display-3 fw-bold mb-4">
+                    Master Your Knowledge with
+                    <span class="text-gradient-primary">AI-Powered</span>
+                    Learning
+                </h1>
+                <p class="lead text-secondary mb-4">
+                    Advanced spaced repetition system powered by SM-2 algorithm.
+                    Study smarter, remember longer, achieve more.
+                </p>
+                <div class="d-flex gap-3">
+                    <a asp-controller="Account" asp-action="Register" class="btn btn-primary-custom btn-lg">
+                        <i class="fas fa-rocket me-2"></i> Get Started Free
+                    </a>
+                    <a asp-controller="Account" asp-action="Login" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-sign-in-alt me-2"></i> Login
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center fade-in">
+                <img src="https://via.placeholder.com/500x400/7C3AED/FFFFFF?text=Learning+Dashboard"
+                     alt="Dashboard Preview" class="img-fluid rounded shadow-custom">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="features-section py-5 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">Why Choose Advanced Learning Cards?</h2>
+            <p class="lead text-secondary">Science-backed features to enhance your learning</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card-custom text-center p-4">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-brain fa-3x text-gradient-primary"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-3">Smart Scheduling</h3>
+                    <p class="text-secondary">
+                        Adaptive algorithms determine the optimal time to review each card based on your performance.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-custom text-center p-4">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-chart-line fa-3x" style="color: var(--secondary-color);"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-3">Progress Tracking</h3>
+                    <p class="text-secondary">
+                        Visualize your learning journey with detailed statistics and performance insights.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-custom text-center p-4">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-graduation-cap fa-3x" style="color: var(--success-color);"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-3">Active Recall</h3>
+                    <p class="text-secondary">
+                        Test yourself before revealing answers to strengthen memory pathways effectively.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cta-section py-5">
+    <div class="container">
+        <div class="card-custom p-5 text-center bg-gradient-primary text-white">
+            <h2 class="display-5 fw-bold mb-3">Ready to Transform Your Learning?</h2>
+            <p class="lead mb-4">Join thousands of learners mastering their knowledge with spaced repetition</p>
+            <a asp-controller="Account" asp-action="Register" class="btn btn-light btn-lg">
+                <i class="fas fa-user-plus me-2"></i> Create Free Account
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .hero-section {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .features-section {
+        background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+    }
+
+    .cta-section {
+        background-color: var(--bg-secondary);
+    }
+
+    .feature-icon i {
+        transition: transform 0.3s ease;
+    }
+
+    .card-custom:hover .feature-icon i {
+        transform: scale(1.1) rotate(5deg);
+    }
+</style>
