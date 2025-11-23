@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jqDWSPeVBPOa5IdKepdyaZ+hp6f2nA0wHzwkahuFPjw=",
+  "Hash": "eqXxRli3cABqKasyyELHFY3S2OZh3A9BLdeUVp6Td/I=",
   "Source": "AdvancedTodoLearningCards",
   "BasePath": "_content/AdvancedTodoLearningCards",
   "Mode": "Default",
@@ -731,6 +731,27 @@
       "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\igkmzg2xs5-33fwszrx9p.gz",
+      "SourceId": "AdvancedTodoLearningCards",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/AdvancedTodoLearningCards",
+      "RelativePath": "css/notifications#[.{fingerprint=33fwszrx9p}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\notifications.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ygde0u1hly",
+      "Integrity": "TjxoGSTdSxb/gc+on+T5YceTLIseAw8yTHL0/a8aoV8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\notifications.css"
+    },
+    {
       "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\is9pljowez-63fj8s7r0e.gz",
       "SourceId": "AdvancedTodoLearningCards",
       "SourceType": "Discovered",
@@ -1298,6 +1319,27 @@
       "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
+      "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\wkwo411qil-awhdnkffki.gz",
+      "SourceId": "AdvancedTodoLearningCards",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/AdvancedTodoLearningCards",
+      "RelativePath": "js/notifications#[.{fingerprint=awhdnkffki}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\notifications.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ipew9123g7",
+      "Integrity": "isCykJlu4XqzJLKf3eN0GjWJ0QC7kKdEfzeGMYO/WmU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\notifications.js"
+    },
+    {
       "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\y4i65glln3-83jwlth58m.gz",
       "SourceId": "AdvancedTodoLearningCards",
       "SourceType": "Discovered",
@@ -1403,6 +1445,27 @@
       "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AdvancedTodoLearningCards.bundle.scp.css"
     },
     {
+      "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\notifications.css",
+      "SourceId": "AdvancedTodoLearningCards",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\",
+      "BasePath": "_content/AdvancedTodoLearningCards",
+      "RelativePath": "css/notifications#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "33fwszrx9p",
+      "Integrity": "ofPcTrGp50+q0H6bJoazcG3H4iGXenBoqNi+tIIs5NU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\notifications.css"
+    },
+    {
       "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\site.css",
       "SourceId": "AdvancedTodoLearningCards",
       "SourceType": "Discovered",
@@ -1443,6 +1506,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\notifications.js",
+      "SourceId": "AdvancedTodoLearningCards",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\",
+      "BasePath": "_content/AdvancedTodoLearningCards",
+      "RelativePath": "js/notifications#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "awhdnkffki",
+      "Integrity": "Jm2AQjfYJTWKM7UOXY4iIsZ+gW5gf2dm3PQzHCdiP3c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\notifications.js"
     },
     {
       "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\site.js",
@@ -3324,6 +3408,304 @@
       ]
     },
     {
+      "Route": "css/notifications.33fwszrx9p.css",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\igkmzg2xs5-33fwszrx9p.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000851063830"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1174"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TjxoGSTdSxb/gc+on+T5YceTLIseAw8yTHL0/a8aoV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Nov 2025 20:20:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ofPcTrGp50+q0H6bJoazcG3H4iGXenBoqNi+tIIs5NU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "33fwszrx9p"
+        },
+        {
+          "Name": "label",
+          "Value": "css/notifications.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ofPcTrGp50+q0H6bJoazcG3H4iGXenBoqNi+tIIs5NU="
+        }
+      ]
+    },
+    {
+      "Route": "css/notifications.33fwszrx9p.css",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\notifications.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ofPcTrGp50+q0H6bJoazcG3H4iGXenBoqNi+tIIs5NU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Nov 2025 20:20:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "33fwszrx9p"
+        },
+        {
+          "Name": "label",
+          "Value": "css/notifications.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ofPcTrGp50+q0H6bJoazcG3H4iGXenBoqNi+tIIs5NU="
+        }
+      ]
+    },
+    {
+      "Route": "css/notifications.33fwszrx9p.css.gz",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\igkmzg2xs5-33fwszrx9p.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1174"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TjxoGSTdSxb/gc+on+T5YceTLIseAw8yTHL0/a8aoV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Nov 2025 20:20:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "33fwszrx9p"
+        },
+        {
+          "Name": "label",
+          "Value": "css/notifications.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TjxoGSTdSxb/gc+on+T5YceTLIseAw8yTHL0/a8aoV8="
+        }
+      ]
+    },
+    {
+      "Route": "css/notifications.css",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\igkmzg2xs5-33fwszrx9p.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000851063830"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1174"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TjxoGSTdSxb/gc+on+T5YceTLIseAw8yTHL0/a8aoV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Nov 2025 20:20:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ofPcTrGp50+q0H6bJoazcG3H4iGXenBoqNi+tIIs5NU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ofPcTrGp50+q0H6bJoazcG3H4iGXenBoqNi+tIIs5NU="
+        }
+      ]
+    },
+    {
+      "Route": "css/notifications.css",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\notifications.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ofPcTrGp50+q0H6bJoazcG3H4iGXenBoqNi+tIIs5NU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Nov 2025 20:20:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ofPcTrGp50+q0H6bJoazcG3H4iGXenBoqNi+tIIs5NU="
+        }
+      ]
+    },
+    {
+      "Route": "css/notifications.css.gz",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\igkmzg2xs5-33fwszrx9p.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1174"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TjxoGSTdSxb/gc+on+T5YceTLIseAw8yTHL0/a8aoV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Nov 2025 20:20:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TjxoGSTdSxb/gc+on+T5YceTLIseAw8yTHL0/a8aoV8="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\ow0stnnm31-nem8dth4c5.gz",
       "Selectors": [
@@ -3916,6 +4298,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8="
+        }
+      ]
+    },
+    {
+      "Route": "js/notifications.awhdnkffki.js",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\wkwo411qil-awhdnkffki.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000526870390"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1897"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"isCykJlu4XqzJLKf3eN0GjWJ0QC7kKdEfzeGMYO/WmU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Nov 2025 20:20:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Jm2AQjfYJTWKM7UOXY4iIsZ+gW5gf2dm3PQzHCdiP3c=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "awhdnkffki"
+        },
+        {
+          "Name": "label",
+          "Value": "js/notifications.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jm2AQjfYJTWKM7UOXY4iIsZ+gW5gf2dm3PQzHCdiP3c="
+        }
+      ]
+    },
+    {
+      "Route": "js/notifications.awhdnkffki.js",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\notifications.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jm2AQjfYJTWKM7UOXY4iIsZ+gW5gf2dm3PQzHCdiP3c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Nov 2025 20:20:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "awhdnkffki"
+        },
+        {
+          "Name": "label",
+          "Value": "js/notifications.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jm2AQjfYJTWKM7UOXY4iIsZ+gW5gf2dm3PQzHCdiP3c="
+        }
+      ]
+    },
+    {
+      "Route": "js/notifications.awhdnkffki.js.gz",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\wkwo411qil-awhdnkffki.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1897"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"isCykJlu4XqzJLKf3eN0GjWJ0QC7kKdEfzeGMYO/WmU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Nov 2025 20:20:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "awhdnkffki"
+        },
+        {
+          "Name": "label",
+          "Value": "js/notifications.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-isCykJlu4XqzJLKf3eN0GjWJ0QC7kKdEfzeGMYO/WmU="
+        }
+      ]
+    },
+    {
+      "Route": "js/notifications.js",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\wkwo411qil-awhdnkffki.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000526870390"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1897"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"isCykJlu4XqzJLKf3eN0GjWJ0QC7kKdEfzeGMYO/WmU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Nov 2025 20:20:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Jm2AQjfYJTWKM7UOXY4iIsZ+gW5gf2dm3PQzHCdiP3c=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jm2AQjfYJTWKM7UOXY4iIsZ+gW5gf2dm3PQzHCdiP3c="
+        }
+      ]
+    },
+    {
+      "Route": "js/notifications.js",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\notifications.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jm2AQjfYJTWKM7UOXY4iIsZ+gW5gf2dm3PQzHCdiP3c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Nov 2025 20:20:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jm2AQjfYJTWKM7UOXY4iIsZ+gW5gf2dm3PQzHCdiP3c="
+        }
+      ]
+    },
+    {
+      "Route": "js/notifications.js.gz",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Debug\\net9.0\\compressed\\wkwo411qil-awhdnkffki.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1897"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"isCykJlu4XqzJLKf3eN0GjWJ0QC7kKdEfzeGMYO/WmU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Nov 2025 20:20:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-isCykJlu4XqzJLKf3eN0GjWJ0QC7kKdEfzeGMYO/WmU="
         }
       ]
     },

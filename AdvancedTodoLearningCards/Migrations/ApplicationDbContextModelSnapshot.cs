@@ -267,6 +267,44 @@ namespace AdvancedTodoLearningCards.Migrations
                     b.ToTable("ReviewLogs");
                 });
 
+            modelBuilder.Entity("AdvancedTodoLearningCards.Models.ReviewNotification", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("AcknowledgedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CardId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsAcknowledged")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("NotifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ScheduledReviewAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CardId");
+
+                    b.HasIndex("NotifiedAt");
+
+                    b.HasIndex("UserId", "IsAcknowledged");
+
+                    b.ToTable("ReviewNotifications");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -444,6 +482,25 @@ namespace AdvancedTodoLearningCards.Migrations
                         .WithMany("ReviewLogs")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Card");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("AdvancedTodoLearningCards.Models.ReviewNotification", b =>
+                {
+                    b.HasOne("AdvancedTodoLearningCards.Models.Card", "Card")
+                        .WithMany()
+                        .HasForeignKey("CardId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("AdvancedTodoLearningCards.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Card");

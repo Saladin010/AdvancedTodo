@@ -1,0 +1,162 @@
+﻿@model AdvancedTodoLearningCards.ViewModels.AdminSettingsViewModel
+
+@{
+    ViewData["Title"] = "Algorithm Settings";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card-custom shadow-custom">
+                <div class="card-header-gradient">
+                    <h2 class="mb-0">
+                        <i class="fas fa-cog me-2"></i>
+                        Algorithm Settings (Global)
+                    </h2>
+                </div>
+                <div class="card-body p-4">
+
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Admin Notice:</strong> These settings affect all users' new cards by default.
+                    </div>
+
+                    <form asp-action="Settings" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                        <h4 class="fw-bold mb-3 mt-4">
+                            <i class="fas fa-calendar-alt me-2"></i>Initial Schedule Settings
+                        </h4>
+
+                        <div class="mb-4">
+                            <label asp-for="InitialIntervals" class="form-label-custom">
+                                Initial Intervals (JSON Array)
+                            </label>
+                            <input asp-for="InitialIntervals" class="form-control form-control-custom" />
+                            <span asp-validation-for="InitialIntervals" class="text-danger"></span>
+                            <small class="form-text text-muted">
+                                Format: [1,3,7,15,30] - Days between initial reviews
+                            </small>
+                        </div>
+
+                        <h4 class="fw-bold mb-3 mt-4">
+                            <i class="fas fa-sliders-h me-2"></i>SM-2 Algorithm Parameters
+                        </h4>
+
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <label asp-for="InitialEaseFactor" class="form-label-custom">
+                                    Initial Ease Factor
+                                </label>
+                                <input asp-for="InitialEaseFactor" type="number" step="0.1"
+                                       class="form-control form-control-custom" />
+                                <span asp-validation-for="InitialEaseFactor" class="text-danger"></span>
+                                <small class="form-text text-muted">Default: 2.5</small>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <label asp-for="MinimumEaseFactor" class="form-label-custom">
+                                    Minimum Ease Factor
+                                </label>
+                                <input asp-for="MinimumEaseFactor" type="number" step="0.1"
+                                       class="form-control form-control-custom" />
+                                <span asp-validation-for="MinimumEaseFactor" class="text-danger"></span>
+                                <small class="form-text text-muted">Default: 1.3</small>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <label asp-for="MaximumEaseFactor" class="form-label-custom">
+                                    Maximum Ease Factor
+                                </label>
+                                <input asp-for="MaximumEaseFactor" type="number" step="0.1"
+                                       class="form-control form-control-custom" />
+                                <span asp-validation-for="MaximumEaseFactor" class="text-danger"></span>
+                                <small class="form-text text-muted">Default: 3.5</small>
+                            </div>
+                        </div>
+
+                        <h4 class="fw-bold mb-3 mt-4">
+                            <i class="fas fa-exchange-alt me-2"></i>Mode Switching
+                        </h4>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <label asp-for="DefaultSchedulingMode" class="form-label-custom">
+                                    Default Scheduling Mode
+                                </label>
+                                <select asp-for="DefaultSchedulingMode" class="form-select form-control-custom">
+                                    <option value="Fixed">Fixed Schedule</option>
+                                    <option value="Adaptive">Adaptive (SM-2)</option>
+                                </select>
+                                <span asp-validation-for="DefaultSchedulingMode" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <label asp-for="SwitchToAdaptiveAfterReps" class="form-label-custom">
+                                    Switch to Adaptive After (Reps)
+                                </label>
+                                <input asp-for="SwitchToAdaptiveAfterReps" type="number"
+                                       class="form-control form-control-custom" />
+                                <span asp-validation-for="SwitchToAdaptiveAfterReps" class="text-danger"></span>
+                                <small class="form-text text-muted">
+                                    Number of repetitions before switching from Fixed to Adaptive
+                                </small>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            <strong>Warning:</strong> Changes will only affect newly created cards.
+                            Existing cards will retain their current settings.
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary-custom flex-fill">
+                                <i class="fas fa-save me-2"></i>Save Settings
+                            </button>
+                            <a asp-action="Dashboard" class="btn btn-outline-secondary flex-fill">
+                                <i class="fas fa-times me-2"></i>Cancel
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Documentation Card -->
+            <div class="card-custom mt-4 p-4">
+                <h4 class="fw-bold mb-3">
+                    <i class="fas fa-book me-2"></i>Algorithm Documentation
+                </h4>
+
+                <h5 class="fw-bold mt-3">Fixed Schedule Mode</h5>
+                <p class="text-muted">
+                    Uses predefined intervals (e.g., [1,3,7,15,30] days) for initial learning.
+                    Provides consistent spacing without performance-based adjustments.
+                </p>
+
+                <h5 class="fw-bold mt-3">Adaptive SM-2 Mode</h5>
+                <p class="text-muted">
+                    SuperMemo 2 algorithm adjusts intervals based on recall quality (0-5).
+                    EF formula: <code>EF' = EF + (0.1 - (5-q) × (0.08 + (5-q) × 0.02))</code>
+                </p>
+
+                <h5 class="fw-bold mt-3">Ease Factor (EF)</h5>
+                <p class="text-muted">
+                    Represents card difficulty. Higher EF = longer intervals.
+                    Range: 1.3 (hard) to 3.5 (easy), default: 2.5.
+                </p>
+
+                <a href="https://www.supermemo.com/en/archives1990-2015/english/ol/sm2"
+                   target="_blank" class="btn btn-outline-primary">
+                    <i class="fas fa-external-link-alt me-2"></i>Read SM-2 Documentation
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

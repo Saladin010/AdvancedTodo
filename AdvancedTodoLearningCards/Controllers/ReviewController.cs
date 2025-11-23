@@ -118,6 +118,42 @@ namespace AdvancedTodoLearningCards.Controllers
             return View(history);
         }
 
+        // GET: Review/GetUnacknowledgedNotifications
+        [HttpGet]
+        public async Task<IActionResult> GetUnacknowledgedNotifications()
+        {
+            var userId = GetUserId();
+            var notifications = await _reviewService.GetUnacknowledgedNotificationsAsync(userId);
+
+            var result = notifications.Select(n => new
+            {
+                notificationId = n.Id,
+                cardId = n.CardId,
+                cardTitle = n.Card.Title,
+                notifiedAt = n.NotifiedAt,
+                scheduledAt = n.ScheduledReviewAt
+            });
+
+            return Json(result);
+        }
+
+        // POST: Review/AcknowledgeNotification
+        [HttpPost]
+        public async Task<IActionResult> AcknowledgeNotification([FromBody] AcknowledgeRequest request)
+        {
+            try
+            {
+                var userId = GetUserId();
+                await _reviewService.AcknowledgeNotificationAsync(request.NotificationId, userId);
+                return Json(new { success = true });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Error acknowledging notification {request.NotificationId}");
+                return Json(new { success = false, message = "Error acknowledging notification" });
+            }
+        }
+
         private List<string> ParseTags(string? tagsJson)
         {
             if (string.IsNullOrEmpty(tagsJson))
@@ -131,6 +167,11 @@ namespace AdvancedTodoLearningCards.Controllers
             {
                 return new List<string>();
             }
+        }
+
+        public class AcknowledgeRequest
+        {
+            public int NotificationId { get; set; }
         }
     }
 }

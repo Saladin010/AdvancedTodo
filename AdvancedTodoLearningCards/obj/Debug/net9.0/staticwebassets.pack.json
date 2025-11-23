@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\AdvancedTodoLearningCards.lngvilbxnp.bundle.scp.css"
     },
     {
+      "Id": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\notifications.css",
+      "PackagePath": "staticwebassets\\css\\notifications.css"
+    },
+    {
       "Id": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\notifications.js",
+      "PackagePath": "staticwebassets\\js\\notifications.js"
     },
     {
       "Id": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\site.js",

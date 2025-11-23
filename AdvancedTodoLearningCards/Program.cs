@@ -66,10 +66,17 @@ namespace AdvancedTodoLearningCards
             builder.Services.AddScoped<ISchedulingEngine, FixedScheduleEngine>();
             builder.Services.AddScoped<Sm2SchedulingEngine>();
 
+            // Add SignalR
+            builder.Services.AddSignalR();
+
+            // Register Background Services
+            builder.Services.AddHostedService<ReviewNotificationService>();
+
             // Add Logging
             builder.Logging.ClearProviders();
             builder.Logging.AddConsole();
             builder.Logging.AddDebug();
+
 
             var app = builder.Build();
 
@@ -106,6 +113,9 @@ namespace AdvancedTodoLearningCards
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            // Map SignalR Hub
+            app.MapHub<AdvancedTodoLearningCards.Hubs.ReviewNotificationHub>("/hubs/notifications");
 
             app.MapControllerRoute(
                 name: "default",

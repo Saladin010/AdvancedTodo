@@ -1,54 +1,4 @@
-﻿@* <!DOCTYPE html> *@
-@* <html lang="en"> *@
-@* <head> *@
-@*     <meta charset="utf-8" /> *@
-@*     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> *@
-@*     <title>@ViewData["Title"] - AdvancedTodoLearningCards</title> *@
-@*     <script type="importmap"></script> *@
-@*     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
-@*     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> *@
-@*     <link rel="stylesheet" href="~/AdvancedTodoLearningCards.styles.css" asp-append-version="true" /> *@
-@* </head> *@
-@* <body> *@
-@*     <header> *@
-@*         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"> *@
-@*             <div class="container-fluid"> *@
-@*                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AdvancedTodoLearningCards</a> *@
-@*                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" *@
-@*                         aria-expanded="false" aria-label="Toggle navigation"> *@
-@*                     <span class="navbar-toggler-icon"></span> *@
-@*                 </button> *@
-@*                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between"> *@
-@*                     <ul class="navbar-nav flex-grow-1"> *@
-@*                         <li class="nav-item"> *@
-@*                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a> *@
-@*                         </li> *@
-@*                         <li class="nav-item"> *@
-@*                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> *@
-@*                         </li> *@
-@*                     </ul> *@
-@*                 </div> *@
-@*             </div> *@
-@*         </nav> *@
-@*     </header> *@
-@*     <div class="container"> *@
-@*         <main role="main" class="pb-3"> *@
-@*             @RenderBody() *@
-@*         </main> *@
-@*     </div> *@
-
-@*     <footer class="border-top footer text-muted"> *@
-@*         <div class="container"> *@
-@*             &copy; 2025 - AdvancedTodoLearningCards - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> *@
-@*         </div> *@
-@*     </footer> *@
-@*     <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
-@*     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
-@*     <script src="~/js/site.js" asp-append-version="true"></script> *@
-@*     @await RenderSectionAsync("Scripts", required: false) *@
-@* </body> *@
-@* </html> *@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -57,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/notifications.css" asp-append-version="true" />
 </head>
 <body>
     <header>
@@ -90,6 +41,24 @@
                             </li>
                         }
                     </ul>
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <div class="notification-bell" id="notificationBell" onclick="toggleNotifications()">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-badge" id="notificationBadge">0</span>
+                            <div class="notification-dropdown" id="notificationDropdown">
+                                <div class="notification-header">
+                                    <h5><i class="fas fa-bell me-2"></i>Review Notifications</h5>
+                                </div>
+                                <div class="notification-list" id="notificationList">
+                                    <div class="notification-empty">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>No new notifications</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
                     <partial name="_LoginPartial" />
                 </div>
             </div>
@@ -134,7 +103,12 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    @if (User.Identity?.IsAuthenticated == true)
+    {
+        <script src="~/js/notifications.js" asp-append-version="true"></script>
+    }
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

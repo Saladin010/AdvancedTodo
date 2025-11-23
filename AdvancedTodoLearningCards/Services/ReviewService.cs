@@ -1,5 +1,7 @@
 ﻿using AdvancedTodoLearningCards.Models;
 using AdvancedTodoLearningCards.Repositories;
+using AdvancedTodoLearningCards.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace AdvancedTodoLearningCards.Services
 {
@@ -11,6 +13,7 @@ namespace AdvancedTodoLearningCards.Services
         private readonly ISchedulingEngine _fixedSchedulingEngine;
         private readonly Sm2SchedulingEngine _sm2SchedulingEngine;
         private readonly ILogger<ReviewService> _logger;
+        private readonly ApplicationDbContext _context;
 
         public ReviewService(
             ICardRepository cardRepository,
@@ -18,7 +21,8 @@ namespace AdvancedTodoLearningCards.Services
             IReviewLogRepository reviewLogRepository,
             ISchedulingEngine fixedSchedulingEngine,
             Sm2SchedulingEngine sm2SchedulingEngine,
-            ILogger<ReviewService> logger)
+            ILogger<ReviewService> logger,
+            ApplicationDbContext context)
         {
             _cardRepository = cardRepository;
             _scheduleRepository = scheduleRepository;
@@ -26,6 +30,7 @@ namespace AdvancedTodoLearningCards.Services
             _fixedSchedulingEngine = fixedSchedulingEngine;
             _sm2SchedulingEngine = sm2SchedulingEngine;
             _logger = logger;
+            _context = context;
         }
 
         public async Task<IEnumerable<Card>> GetDueCardsAsync(string userId)
@@ -109,6 +114,54 @@ namespace AdvancedTodoLearningCards.Services
         {
             var dueCards = await GetDueCardsAsync(userId);
             return dueCards.Count();
+        }
+
+        // Notification management methods
+        public async Task<IEnumerable<ReviewNotification>> GetUnacknowledgedNotificationsAsync(string userId)
+        {
+            return await _context.ReviewNotifications
+                .Include(rn => rn.Card)
+                .Where(rn => rn.UserId == userId && !rn.IsAcknowledged)
+                .OrderByDescending(rn => rn.NotifiedAt)
+                .ToListAsync();
+        }
+
+        public async Task<int> GetUnacknowledgedCountAsync(string userId)
+        {
+            return await _context.ReviewNotifications
+                .CountAsync(rn => rn.UserId == userId && !rn.IsAcknowledged);
+        }
+
+        public async Task AcknowledgeNotificationAsync(int notificationId, string userId)
+        {
+            var notification = await _context.ReviewNotifications
+                .FirstOrDefaultAsync(rn => rn.Id == notificationId && rn.UserId == userId);
+
+            if (notification != null && !notification.IsAcknowledged)
+            {
+                notification.IsAcknowledged = true;
+                notification.AcknowledgedAt = DateTime.UtcNow;
+                await _context.SaveChangesAsync();
+
+                _logger.LogInformation($"Notification {notificationId} acknowledged by user {userId}");
+            }
+        }
+
+        public async Task<ReviewNotification> CreateNotificationAsync(string userId, int cardId, DateTime scheduledReviewAt)
+        {
+            var notification = new ReviewNotification
+            {
+                UserId = userId,
+                CardId = cardId,
+                NotifiedAt = DateTime.UtcNow,
+                ScheduledReviewAt = scheduledReviewAt,
+                IsAcknowledged = false
+            };
+
+            _context.ReviewNotifications.Add(notification);
+            await _context.SaveChangesAsync();
+
+            return notification;
         }
     }
 }

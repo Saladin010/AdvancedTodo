@@ -15,6 +15,7 @@ namespace AdvancedTodoLearningCards.Data
         public DbSet<CardSchedule> CardSchedules { get; set; }
         public DbSet<ReviewLog> ReviewLogs { get; set; }
         public DbSet<AlgorithmSettings> AlgorithmSettings { get; set; }
+        public DbSet<ReviewNotification> ReviewNotifications { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -74,6 +75,25 @@ namespace AdvancedTodoLearningCards.Data
                     .WithMany(u => u.AlgorithmSettings)
                     .HasForeignKey(e => e.UserId)
                     .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // ReviewNotification Configuration
+            builder.Entity<ReviewNotification>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.HasIndex(e => new { e.UserId, e.IsAcknowledged });
+                entity.HasIndex(e => e.CardId);
+                entity.HasIndex(e => e.NotifiedAt);
+
+                entity.HasOne(e => e.User)
+                    .WithMany()
+                    .HasForeignKey(e => e.UserId)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                entity.HasOne(e => e.Card)
+                    .WithMany()
+                    .HasForeignKey(e => e.CardId)
+                    .OnDelete(DeleteBehavior.NoAction);
             });
         }
     }

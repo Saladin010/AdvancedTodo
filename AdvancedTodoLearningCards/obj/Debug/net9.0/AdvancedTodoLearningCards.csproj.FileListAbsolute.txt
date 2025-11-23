@@ -245,7 +245,6 @@ D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.AdvancedTodoLearningCards.props
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.AdvancedTodoLearningCards.props
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\staticwebassets.pack.json
-D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\Advanced.6AF1A4E5.Up2Date
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\AdvancedTodoLearningCards.dll
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\refint\AdvancedTodoLearningCards.dll
@@ -253,3 +252,7 @@ D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\AdvancedTodoLearningCards.genruntimeconfig.cache
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\ref\AdvancedTodoLearningCards.dll
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\compressed\6aloh5b9jw-o6ytadnqyk.gz
+D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\AdvancedTodoLearningCards.sourcelink.json
+D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\compressed\igkmzg2xs5-33fwszrx9p.gz
+D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\compressed\wkwo411qil-awhdnkffki.gz
+D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
