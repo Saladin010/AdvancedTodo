@@ -24,6 +24,7 @@ namespace AdvancedTodoLearningCards.ViewModels
         public decimal? EaseFactor { get; set; }
         public int ReviewCount { get; set; }
         public bool IsDueToday { get; set; }
+        public string? ImageUrl { get; set; }
     }
 
     public class CreateCardViewModel
@@ -40,6 +41,11 @@ namespace AdvancedTodoLearningCards.ViewModels
 
         [Display(Name = "Tags (comma-separated)")]
         public string? TagsString { get; set; }
+
+        [Display(Name = "Image URL (optional)")]
+        [Url(ErrorMessage = "Please enter a valid URL")]
+        [MaxLength(500, ErrorMessage = "URL cannot exceed 500 characters")]
+        public string? ImageUrl { get; set; }
 
         [Display(Name = "Difficulty Level")]
         public CardDifficulty Difficulty { get; set; } = CardDifficulty.Medium;

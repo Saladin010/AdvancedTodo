@@ -36,6 +36,19 @@
                         </div>
 
                         <div class="mb-4">
+                            <label asp-for="ImageUrl" class="form-label-custom">
+                                <i class="fas fa-image me-2"></i>Image URL (Optional)
+                            </label>
+                            <input asp-for="ImageUrl" class="form-control form-control-custom" id="ImageUrl"
+                                   placeholder="https://example.com/image.jpg" />
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                            <small class="form-text text-muted">
+                                Enter a URL to an image that helps illustrate this card
+                            </small>
+                            <!-- Image preview will be inserted here by JavaScript -->
+                        </div>
+
+                        <div class="mb-4">
                             <label asp-for="TagsString" class="form-label-custom">
                                 <i class="fas fa-tags me-2"></i>Tags (comma-separated)
                             </label>
@@ -73,4 +86,5 @@
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/image-preview.js"></script>
 }

@@ -1,5 +1,6 @@
 ﻿using AdvancedTodoLearningCards.Data;
 using AdvancedTodoLearningCards.Models;
+using AdvancedTodoLearningCards.Services;
 using AdvancedTodoLearningCards.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,12 +12,49 @@ namespace AdvancedTodoLearningCards.Controllers
     public class AdminController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IAdminService _adminService;
         private readonly ILogger<AdminController> _logger;
 
-        public AdminController(ApplicationDbContext context, ILogger<AdminController> logger)
+        public AdminController(
+            ApplicationDbContext context,
+            IAdminService adminService,
+            ILogger<AdminController> logger)
         {
             _context = context;
+            _adminService = adminService;
             _logger = logger;
+        }
+
+        // GET: Admin/Dashboard
+        public async Task<IActionResult> Dashboard()
+        {
+            try
+            {
+                var viewModel = await _adminService.GetDashboardStatisticsAsync();
+                return View(viewModel);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error loading admin dashboard");
+                TempData["Error"] = "Error loading dashboard statistics";
+                return View(new AdminDashboardViewModel());
+            }
+        }
+
+        // GET: Admin/Users
+        public async Task<IActionResult> Users(string? search)
+        {
+            try
+            {
+                var viewModel = await _adminService.GetUserStatisticsAsync(search);
+                return View(viewModel);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error loading user statistics");
+                TempData["Error"] = "Error loading user statistics";
+                return View(new UserManagementViewModel());
+            }
         }
 
         // GET: Admin/Settings
@@ -91,43 +129,6 @@ namespace AdvancedTodoLearningCards.Controllers
             }
 
             return View(model);
-        }
-
-        // GET: Admin/Users
-        public async Task<IActionResult> Users()
-        {
-            var users = await _context.Users
-                .Select(u => new
-                {
-                    u.Id,
-                    u.UserName,
-                    u.Email,
-                    u.CreatedAt,
-                    u.LastLoginAt,
-                    CardCount = u.Cards.Count,
-                    ReviewCount = u.ReviewLogs.Count
-                })
-                .ToListAsync();
-
-            return View(users);
-        }
-
-        // GET: Admin/Dashboard
-        public async Task<IActionResult> Dashboard()
-        {
-            var stats = new
-            {
-                TotalUsers = await _context.Users.CountAsync(),
-                TotalCards = await _context.Cards.CountAsync(),
-                TotalReviews = await _context.ReviewLogs.CountAsync(),
-                ActiveUsersToday = await _context.ReviewLogs
-                    .Where(r => r.ReviewedAt.Date == DateTime.UtcNow.Date)
-                    .Select(r => r.UserId)
-                    .Distinct()
-                    .CountAsync()
-            };
-
-            return View(stats);
         }
     }
 }

@@ -50,6 +50,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
             "FluentAssertions": {
               "target": "Package",
               "version": "[8.8.0, )"
@@ -81,6 +85,10 @@
             "Moq": {
               "target": "Package",
               "version": "[4.20.72, )"
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.7.4, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",

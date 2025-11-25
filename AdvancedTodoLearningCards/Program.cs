@@ -61,6 +61,7 @@ namespace AdvancedTodoLearningCards
             builder.Services.AddScoped<ICardService, CardService>();
             builder.Services.AddScoped<IReviewService, ReviewService>();
             builder.Services.AddScoped<IDashboardService, DashboardService>();
+            builder.Services.AddScoped<IAdminService, AdminService>();
 
             // Register Scheduling Engines
             builder.Services.AddScoped<ISchedulingEngine, FixedScheduleEngine>();

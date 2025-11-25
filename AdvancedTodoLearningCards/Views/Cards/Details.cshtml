@@ -21,6 +21,15 @@
                 </div>
                 <div class="card-body p-4">
 
+                    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                    {
+                        <div class="mb-4 text-center">
+                            <img src="@Model.ImageUrl" alt="@Model.Title" class="card-details-image" 
+                                 onclick="openLightbox(this.src)" style="cursor: pointer;"
+                                 onerror="this.style.display='none'">
+                        </div>
+                    }
+
                     <div class="mb-4">
                         <h3 class="fw-bold mb-3">@Model.Title</h3>
 
@@ -109,3 +118,29 @@
         </div>
     </div>
 </div>
+
+<!-- Image Lightbox -->
+<div id="imageLightbox" class="image-lightbox" onclick="closeLightbox()">
+    <span class="image-lightbox-close">&times;</span>
+    <img id="lightboxImage" src="" alt="Full size image">
+</div>
+
+@section Scripts {
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightboxImage').src = src;
+            document.getElementById('imageLightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('imageLightbox').classList.remove('active');
+        }
+
+        // Close lightbox on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+}

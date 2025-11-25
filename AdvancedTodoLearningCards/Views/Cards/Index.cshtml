@@ -59,6 +59,22 @@
             {
                 <div class="col-md-6 col-lg-4">
                     <div class="learning-card-item">
+                        @if (!string.IsNullOrEmpty(card.ImageUrl))
+                        {
+                            <div class="card-image-container mb-3">
+                                <img src="@card.ImageUrl" alt="@card.Title" class="card-image" 
+                                     onerror="this.parentElement.innerHTML='<div class=\'card-image-placeholder\'><i class=\'fas fa-image\'></i></div>'">
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="card-image-container mb-3">
+                                <div class="card-image-placeholder">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                            </div>
+                        }
+
                         <div class="d-flex justify-content-between align-items-start mb-2">
                             <h5 class="card-title-custom mb-0">@card.Title</h5>
                             <span class="badge badge-custom badge-@card.Difficulty.ToString().ToLower()">

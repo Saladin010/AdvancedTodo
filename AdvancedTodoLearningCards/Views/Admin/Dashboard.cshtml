@@ -1,0 +1,277 @@
+@model AdvancedTodoLearningCards.ViewModels.AdminDashboardViewModel
+
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="container-fluid py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="fw-bold">
+            <i class="fas fa-tachometer-alt me-2"></i>
+            Admin Dashboard
+        </h1>
+        <div>
+            <a asp-action="Users" class="btn btn-outline-primary">
+                <i class="fas fa-users me-2"></i>Manage Users
+            </a>
+            <a asp-action="Settings" class="btn btn-outline-secondary">
+                <i class="fas fa-cog me-2"></i>Settings
+            </a>
+        </div>
+    </div>
+
+    <!-- Key Metrics -->
+    <div class="row g-4 mb-4">
+        <div class="col-md-3">
+            <div class="stats-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <small class="text-muted d-block mb-1">Total Users</small>
+                        <h2 class="stats-value mb-0">@Model.TotalUsers</h2>
+                    </div>
+                    <div class="stats-icon bg-primary">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="stats-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <small class="text-muted d-block mb-1">Total Cards</small>
+                        <h2 class="stats-value mb-0">@Model.TotalCards</h2>
+                    </div>
+                    <div class="stats-icon bg-success">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="stats-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <small class="text-muted d-block mb-1">Total Reviews</small>
+                        <h2 class="stats-value mb-0">@Model.TotalReviews</h2>
+                    </div>
+                    <div class="stats-icon bg-warning">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="stats-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <small class="text-muted d-block mb-1">Active Today</small>
+                        <h2 class="stats-value mb-0">@Model.ActiveUsersToday</h2>
+                    </div>
+                    <div class="stats-icon bg-info">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secondary Metrics -->
+    <div class="row g-4 mb-4">
+        <div class="col-md-3">
+            <div class="card-custom p-3">
+                <small class="text-muted d-block mb-1">Active This Week</small>
+                <h4 class="mb-0">@Model.ActiveUsersThisWeek</h4>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card-custom p-3">
+                <small class="text-muted d-block mb-1">Cards Created Today</small>
+                <h4 class="mb-0">@Model.CardsCreatedToday</h4>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card-custom p-3">
+                <small class="text-muted d-block mb-1">Reviews Today</small>
+                <h4 class="mb-0">@Model.ReviewsCompletedToday</h4>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card-custom p-3">
+                <small class="text-muted d-block mb-1">Avg Cards/User</small>
+                <h4 class="mb-0">@Model.AverageCardsPerUser</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Row -->
+    <div class="row g-4 mb-4">
+        <div class="col-lg-8">
+            <div class="card-custom p-4">
+                <h4 class="fw-bold mb-3">
+                    <i class="fas fa-chart-line me-2"></i>
+                    Daily Reviews (Last 30 Days)
+                </h4>
+                <canvas id="reviewsChart" height="80"></canvas>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card-custom p-4">
+                <h4 class="fw-bold mb-3">
+                    <i class="fas fa-chart-pie me-2"></i>
+                    Cards by Difficulty
+                </h4>
+                <canvas id="difficultyChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Cards Chart -->
+    <div class="row g-4 mb-4">
+        <div class="col-12">
+            <div class="card-custom p-4">
+                <h4 class="fw-bold mb-3">
+                    <i class="fas fa-chart-area me-2"></i>
+                    New Cards Created (Last 30 Days)
+                </h4>
+                <canvas id="newCardsChart" height="60"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="card-custom p-4">
+                <h4 class="fw-bold mb-3">
+                    <i class="fas fa-history me-2"></i>
+                    Recent Activity
+                </h4>
+                <div class="list-group list-group-flush">
+                    @foreach (var activity in Model.RecentActivity.Take(10))
+                    {
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>@activity.UserName</strong>
+                                    <span class="text-muted">@activity.Description</span>
+                                </div>
+                                <small class="text-muted">
+                                    @activity.Timestamp.ToString("MMM dd, HH:mm")
+                                </small>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Reviews Chart
+        const reviewsCtx = document.getElementById('reviewsChart').getContext('2d');
+        const reviewsData = @Html.Raw(Json.Serialize(Model.DailyReviews));
+        
+        new Chart(reviewsCtx, {
+            type: 'line',
+            data: {
+                labels: reviewsData.map(d => new Date(d.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })),
+                datasets: [{
+                    label: 'Reviews',
+                    data: reviewsData.map(d => d.count),
+                    borderColor: 'rgb(124, 58, 237)',
+                    backgroundColor: 'rgba(124, 58, 237, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            precision: 0
+                        }
+                    }
+                }
+            }
+        });
+
+        // Difficulty Chart
+        const difficultyCtx = document.getElementById('difficultyChart').getContext('2d');
+        const difficultyData = @Html.Raw(Json.Serialize(Model.CardsByDifficulty));
+        
+        new Chart(difficultyCtx, {
+            type: 'doughnut',
+            data: {
+                labels: Object.keys(difficultyData),
+                datasets: [{
+                    data: Object.values(difficultyData),
+                    backgroundColor: [
+                        'rgba(16, 185, 129, 0.8)',
+                        'rgba(245, 158, 11, 0.8)',
+                        'rgba(239, 68, 68, 0.8)'
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        // New Cards Chart
+        const newCardsCtx = document.getElementById('newCardsChart').getContext('2d');
+        const newCardsData = @Html.Raw(Json.Serialize(Model.DailyNewCards));
+        
+        new Chart(newCardsCtx, {
+            type: 'bar',
+            data: {
+                labels: newCardsData.map(d => new Date(d.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })),
+                datasets: [{
+                    label: 'New Cards',
+                    data: newCardsData.map(d => d.count),
+                    backgroundColor: 'rgba(236, 72, 153, 0.8)',
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            precision: 0
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+}

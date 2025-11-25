@@ -110,18 +110,16 @@
                 // Disable all buttons
                 document.querySelectorAll('.btn-quality').forEach(b => b.disabled = true);
 
-                // Submit review
+                // Submit review using FormData
                 try {
+                    const formData = new FormData();
+                    formData.append('cardId', currentCardId);
+                    formData.append('quality', quality);
+                    formData.append('__RequestVerificationToken', document.querySelector('input[name="__RequestVerificationToken"]')?.value || '');
+
                     const response = await fetch('@Url.Action("SubmitReview", "Review")', {
                         method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value
-                        },
-                        body: JSON.stringify({
-                            cardId: currentCardId,
-                            quality: quality
-                        })
+                        body: formData
                     });
 
                     const result = await response.json();
@@ -136,6 +134,9 @@
                             // Session complete
                             window.location.href = '@Url.Action("Index", "Dashboard")';
                         }
+                    } else {
+                        alert('Error submitting review: ' + (result.message || 'Unknown error'));
+                        document.querySelectorAll('.btn-quality').forEach(b => b.disabled = false);
                     }
                 } catch (error) {
                     console.error('Error:', error);
@@ -173,4 +174,5 @@
             }
         }
     </script>
+    @Html.AntiForgeryToken()
 }

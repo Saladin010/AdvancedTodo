@@ -43,7 +43,8 @@ namespace AdvancedTodoLearningCards.Controllers
                     Tags = ParseTags(c.Tags),
                     Difficulty = c.Difficulty,
                     LastInterval = c.Schedule?.IntervalDays,
-                    LastReviewedAt = c.Schedule?.LastReviewedAt
+                    LastReviewedAt = c.Schedule?.LastReviewedAt,
+                    ImageUrl = c.ImageUrl
                 }).ToList(),
                 CurrentIndex = 0,
                 TotalCards = dueCards.Count(),
@@ -102,7 +103,8 @@ namespace AdvancedTodoLearningCards.Controllers
                     Title = c.Title,
                     NextReviewAt = c.Schedule!.NextReviewAt,
                     DaysUntilReview = (int)(c.Schedule.NextReviewAt.Date - DateTime.UtcNow.Date).TotalDays,
-                    Difficulty = c.Difficulty
+                    Difficulty = c.Difficulty,
+                    ImageUrl = c.ImageUrl
                 }).ToList()
             };
 

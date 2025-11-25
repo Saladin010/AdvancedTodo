@@ -21,6 +21,10 @@ namespace AdvancedTodoLearningCards.Models
         [MaxLength(500)]
         public string? Tags { get; set; } // Stored as JSON array: ["tag1", "tag2"]
 
+        [MaxLength(500)]
+        [Url(ErrorMessage = "Please enter a valid URL")]
+        public string? ImageUrl { get; set; } // Optional image URL for the card
+
         public CardDifficulty Difficulty { get; set; } = CardDifficulty.Medium;
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;

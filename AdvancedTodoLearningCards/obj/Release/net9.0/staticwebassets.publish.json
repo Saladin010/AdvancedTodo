@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/2pjxw3V6fA/tAgIeDPzt6Ns6t6GfTu1LjyK+EyJZz8=",
+  "Hash": "ebHB4z61YFGxOGrdmW84wQ/Ks6A3T3I37UgupN4CxCQ=",
   "Source": "AdvancedTodoLearningCards",
   "BasePath": "_content/AdvancedTodoLearningCards",
   "Mode": "Default",
@@ -120,6 +120,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\12lzoojxh1-jretmpgdjl.gz",
+      "SourceId": "AdvancedTodoLearningCards",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "_content/AdvancedTodoLearningCards",
+      "RelativePath": "js/image-preview#[.{fingerprint=jretmpgdjl}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\image-preview.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "bwidm59wne",
+      "Integrity": "6zrBUdaf+oNYA3YV6EgFT1JcLMtPcRFIOs1bPgnjHA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\image-preview.js"
+    },
+    {
+      "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\206044q1qr-w9zj08miv6.gz",
+      "SourceId": "AdvancedTodoLearningCards",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "_content/AdvancedTodoLearningCards",
+      "RelativePath": "css/admin#[.{fingerprint=w9zj08miv6}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\admin.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "4a73wxecvl",
+      "Integrity": "nGuGKFk1jd0sF0GhZ21AgEzq7bQT4Zx2sOo+Y103EqE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\admin.css"
     },
     {
       "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\21ybw3l8s8-ee0r1s7dh0.gz",
@@ -1046,12 +1088,12 @@
       "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\ow0stnnm31-nem8dth4c5.gz",
+      "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\ow0stnnm31-jxg4kjqrlu.gz",
       "SourceId": "AdvancedTodoLearningCards",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\",
       "BasePath": "_content/AdvancedTodoLearningCards",
-      "RelativePath": "css/site#[.{fingerprint=nem8dth4c5}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=jxg4kjqrlu}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1060,8 +1102,8 @@
       "RelatedAsset": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "tl6z1u81t8",
-      "Integrity": "z1p6YrkRHQnfRlQ+kbRPmnxGIvOunnEOWQRXMQYLDb8=",
+      "Fingerprint": "d88wu7hwpb",
+      "Integrity": "rVtPl7duHA0uYw2bhNnx5AIodrcD9fMq85Blp3BegJE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\site.css"
@@ -1254,6 +1296,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\12lzoojxh1-jretmpgdjl.br",
+      "SourceId": "AdvancedTodoLearningCards",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\",
+      "BasePath": "_content/AdvancedTodoLearningCards",
+      "RelativePath": "js/image-preview#[.{fingerprint=jretmpgdjl}]?.js.br",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\image-preview.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "7e1whlw7k9",
+      "Integrity": "8UvI3UUlVhvcqPcPUn15bYiiRaB5Wb8Itod5k8bWa3I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\image-preview.js"
+    },
+    {
+      "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\206044q1qr-w9zj08miv6.br",
+      "SourceId": "AdvancedTodoLearningCards",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\",
+      "BasePath": "_content/AdvancedTodoLearningCards",
+      "RelativePath": "css/admin#[.{fingerprint=w9zj08miv6}]?.css.br",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\admin.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "wqt63870nk",
+      "Integrity": "6LAYwGGfAtv7w7oB/xSDXvV+59Ygl05iGa6nFDgnZTs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\admin.css"
     },
     {
       "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\21ybw3l8s8-ee0r1s7dh0.br",
@@ -2180,12 +2264,12 @@
       "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\ow0stnnm31-nem8dth4c5.br",
+      "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\ow0stnnm31-jxg4kjqrlu.br",
       "SourceId": "AdvancedTodoLearningCards",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\",
       "BasePath": "_content/AdvancedTodoLearningCards",
-      "RelativePath": "css/site#[.{fingerprint=nem8dth4c5}]?.css.br",
+      "RelativePath": "css/site#[.{fingerprint=jxg4kjqrlu}]?.css.br",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -2194,8 +2278,8 @@
       "RelatedAsset": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "br",
-      "Fingerprint": "ff2ukw8x77",
-      "Integrity": "NcSD05HXiRrwrL/6ezBpwei4CVieOE5NbNamT8H9q48=",
+      "Fingerprint": "dlipexwa7q",
+      "Integrity": "YZxXNBcHJsk8qHlce5NSaF9Pg3kJJJHZYnjDh0e8zjc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\site.css"
@@ -2831,6 +2915,27 @@
       "OriginalItemSpec": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\scopedcss\\projectbundle\\AdvancedTodoLearningCards.bundle.scp.css"
     },
     {
+      "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\admin.css",
+      "SourceId": "AdvancedTodoLearningCards",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\",
+      "BasePath": "_content/AdvancedTodoLearningCards",
+      "RelativePath": "css/admin#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w9zj08miv6",
+      "Integrity": "VDkG1UmD4x99XdGJQB4A1eB/NIYfr9uGd2J9JCFe1IY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\admin.css"
+    },
+    {
       "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\notifications.css",
       "SourceId": "AdvancedTodoLearningCards",
       "SourceType": "Discovered",
@@ -2866,8 +2971,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nem8dth4c5",
-      "Integrity": "kQuPsgypMXC/KWB/7ernKXJplXsnGpQOjps//E4u2cg=",
+      "Fingerprint": "jxg4kjqrlu",
+      "Integrity": "SbFsNX18n/bJq8/fgiNhGUmQEoIjg40CG3IBLSacCkY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2892,6 +2997,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\image-preview.js",
+      "SourceId": "AdvancedTodoLearningCards",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\",
+      "BasePath": "_content/AdvancedTodoLearningCards",
+      "RelativePath": "js/image-preview#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jretmpgdjl",
+      "Integrity": "/wm0eebHdQ9XTM9FJn07Xc/dDryodsr9/U8nO2PQ4rg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\image-preview.js"
     },
     {
       "Identity": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\notifications.js",
@@ -5226,6 +5352,520 @@
       ]
     },
     {
+      "Route": "css/admin.css",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\206044q1qr-w9zj08miv6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001396648045"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "715"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nGuGKFk1jd0sF0GhZ21AgEzq7bQT4Zx2sOo+Y103EqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:22:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"VDkG1UmD4x99XdGJQB4A1eB/NIYfr9uGd2J9JCFe1IY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VDkG1UmD4x99XdGJQB4A1eB/NIYfr9uGd2J9JCFe1IY="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.css",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\206044q1qr-w9zj08miv6.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.001808318264"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "552"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6LAYwGGfAtv7w7oB/xSDXvV+59Ygl05iGa6nFDgnZTs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:22:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"VDkG1UmD4x99XdGJQB4A1eB/NIYfr9uGd2J9JCFe1IY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VDkG1UmD4x99XdGJQB4A1eB/NIYfr9uGd2J9JCFe1IY="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.css",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1846"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VDkG1UmD4x99XdGJQB4A1eB/NIYfr9uGd2J9JCFe1IY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:22:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VDkG1UmD4x99XdGJQB4A1eB/NIYfr9uGd2J9JCFe1IY="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.css.br",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\206044q1qr-w9zj08miv6.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "552"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6LAYwGGfAtv7w7oB/xSDXvV+59Ygl05iGa6nFDgnZTs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:22:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6LAYwGGfAtv7w7oB/xSDXvV+59Ygl05iGa6nFDgnZTs="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.css.gz",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\206044q1qr-w9zj08miv6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "715"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nGuGKFk1jd0sF0GhZ21AgEzq7bQT4Zx2sOo+Y103EqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:22:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nGuGKFk1jd0sF0GhZ21AgEzq7bQT4Zx2sOo+Y103EqE="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.w9zj08miv6.css",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\206044q1qr-w9zj08miv6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001396648045"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "715"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nGuGKFk1jd0sF0GhZ21AgEzq7bQT4Zx2sOo+Y103EqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:22:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"VDkG1UmD4x99XdGJQB4A1eB/NIYfr9uGd2J9JCFe1IY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w9zj08miv6"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VDkG1UmD4x99XdGJQB4A1eB/NIYfr9uGd2J9JCFe1IY="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.w9zj08miv6.css",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\206044q1qr-w9zj08miv6.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.001808318264"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "552"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6LAYwGGfAtv7w7oB/xSDXvV+59Ygl05iGa6nFDgnZTs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:22:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"VDkG1UmD4x99XdGJQB4A1eB/NIYfr9uGd2J9JCFe1IY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w9zj08miv6"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VDkG1UmD4x99XdGJQB4A1eB/NIYfr9uGd2J9JCFe1IY="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.w9zj08miv6.css",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1846"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VDkG1UmD4x99XdGJQB4A1eB/NIYfr9uGd2J9JCFe1IY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:22:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w9zj08miv6"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VDkG1UmD4x99XdGJQB4A1eB/NIYfr9uGd2J9JCFe1IY="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.w9zj08miv6.css.br",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\206044q1qr-w9zj08miv6.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "552"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6LAYwGGfAtv7w7oB/xSDXvV+59Ygl05iGa6nFDgnZTs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:22:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w9zj08miv6"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin.css.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6LAYwGGfAtv7w7oB/xSDXvV+59Ygl05iGa6nFDgnZTs="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.w9zj08miv6.css.gz",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\206044q1qr-w9zj08miv6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "715"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nGuGKFk1jd0sF0GhZ21AgEzq7bQT4Zx2sOo+Y103EqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:22:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w9zj08miv6"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nGuGKFk1jd0sF0GhZ21AgEzq7bQT4Zx2sOo+Y103EqE="
+        }
+      ]
+    },
+    {
       "Route": "css/notifications.33fwszrx9p.css",
       "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\igkmzg2xs5-33fwszrx9p.gz",
       "Selectors": [
@@ -5741,12 +6381,12 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\ow0stnnm31-nem8dth4c5.gz",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\ow0stnnm31-jxg4kjqrlu.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000469263257"
+          "Quality": "0.000369959304"
         }
       ],
       "ResponseHeaders": [
@@ -5756,15 +6396,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2130"
+          "Value": "2702"
         },
         {
           "Name": "ETag",
-          "Value": "\"z1p6YrkRHQnfRlQ+kbRPmnxGIvOunnEOWQRXMQYLDb8=\""
+          "Value": "\"rVtPl7duHA0uYw2bhNnx5AIodrcD9fMq85Blp3BegJE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Nov 2025 16:11:03 GMT"
+          "Value": "Mon, 24 Nov 2025 23:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5784,24 +6424,24 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"kQuPsgypMXC/KWB/7ernKXJplXsnGpQOjps//E4u2cg=\""
+          "Value": "W/\"SbFsNX18n/bJq8/fgiNhGUmQEoIjg40CG3IBLSacCkY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kQuPsgypMXC/KWB/7ernKXJplXsnGpQOjps//E4u2cg="
+          "Value": "sha256-SbFsNX18n/bJq8/fgiNhGUmQEoIjg40CG3IBLSacCkY="
         }
       ]
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\ow0stnnm31-nem8dth4c5.br",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\ow0stnnm31-jxg4kjqrlu.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.000574712644"
+          "Quality": "0.000448028674"
         }
       ],
       "ResponseHeaders": [
@@ -5811,15 +6451,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1739"
+          "Value": "2231"
         },
         {
           "Name": "ETag",
-          "Value": "\"NcSD05HXiRrwrL/6ezBpwei4CVieOE5NbNamT8H9q48=\""
+          "Value": "\"YZxXNBcHJsk8qHlce5NSaF9Pg3kJJJHZYnjDh0e8zjc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Nov 2025 16:11:03 GMT"
+          "Value": "Mon, 24 Nov 2025 23:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5839,13 +6479,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"kQuPsgypMXC/KWB/7ernKXJplXsnGpQOjps//E4u2cg=\""
+          "Value": "W/\"SbFsNX18n/bJq8/fgiNhGUmQEoIjg40CG3IBLSacCkY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kQuPsgypMXC/KWB/7ernKXJplXsnGpQOjps//E4u2cg="
+          "Value": "sha256-SbFsNX18n/bJq8/fgiNhGUmQEoIjg40CG3IBLSacCkY="
         }
       ]
     },
@@ -5860,7 +6500,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9337"
+          "Value": "12732"
         },
         {
           "Name": "Content-Type",
@@ -5868,11 +6508,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kQuPsgypMXC/KWB/7ernKXJplXsnGpQOjps//E4u2cg=\""
+          "Value": "\"SbFsNX18n/bJq8/fgiNhGUmQEoIjg40CG3IBLSacCkY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Nov 2025 16:11:03 GMT"
+          "Value": "Mon, 24 Nov 2025 23:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5882,13 +6522,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kQuPsgypMXC/KWB/7ernKXJplXsnGpQOjps//E4u2cg="
+          "Value": "sha256-SbFsNX18n/bJq8/fgiNhGUmQEoIjg40CG3IBLSacCkY="
         }
       ]
     },
     {
       "Route": "css/site.css.br",
-      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\ow0stnnm31-nem8dth4c5.br",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\ow0stnnm31-jxg4kjqrlu.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5897,7 +6537,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1739"
+          "Value": "2231"
         },
         {
           "Name": "Content-Type",
@@ -5905,11 +6545,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NcSD05HXiRrwrL/6ezBpwei4CVieOE5NbNamT8H9q48=\""
+          "Value": "\"YZxXNBcHJsk8qHlce5NSaF9Pg3kJJJHZYnjDh0e8zjc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Nov 2025 16:11:03 GMT"
+          "Value": "Mon, 24 Nov 2025 23:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5927,13 +6567,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NcSD05HXiRrwrL/6ezBpwei4CVieOE5NbNamT8H9q48="
+          "Value": "sha256-YZxXNBcHJsk8qHlce5NSaF9Pg3kJJJHZYnjDh0e8zjc="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\ow0stnnm31-nem8dth4c5.gz",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\ow0stnnm31-jxg4kjqrlu.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5942,7 +6582,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2130"
+          "Value": "2702"
         },
         {
           "Name": "Content-Type",
@@ -5950,11 +6590,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z1p6YrkRHQnfRlQ+kbRPmnxGIvOunnEOWQRXMQYLDb8=\""
+          "Value": "\"rVtPl7duHA0uYw2bhNnx5AIodrcD9fMq85Blp3BegJE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Nov 2025 16:11:03 GMT"
+          "Value": "Mon, 24 Nov 2025 23:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5972,18 +6612,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z1p6YrkRHQnfRlQ+kbRPmnxGIvOunnEOWQRXMQYLDb8="
+          "Value": "sha256-rVtPl7duHA0uYw2bhNnx5AIodrcD9fMq85Blp3BegJE="
         }
       ]
     },
     {
-      "Route": "css/site.nem8dth4c5.css",
-      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\ow0stnnm31-nem8dth4c5.gz",
+      "Route": "css/site.jxg4kjqrlu.css",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\ow0stnnm31-jxg4kjqrlu.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000469263257"
+          "Quality": "0.000369959304"
         }
       ],
       "ResponseHeaders": [
@@ -5993,15 +6633,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2130"
+          "Value": "2702"
         },
         {
           "Name": "ETag",
-          "Value": "\"z1p6YrkRHQnfRlQ+kbRPmnxGIvOunnEOWQRXMQYLDb8=\""
+          "Value": "\"rVtPl7duHA0uYw2bhNnx5AIodrcD9fMq85Blp3BegJE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Nov 2025 16:11:03 GMT"
+          "Value": "Mon, 24 Nov 2025 23:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6021,13 +6661,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"kQuPsgypMXC/KWB/7ernKXJplXsnGpQOjps//E4u2cg=\""
+          "Value": "W/\"SbFsNX18n/bJq8/fgiNhGUmQEoIjg40CG3IBLSacCkY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nem8dth4c5"
+          "Value": "jxg4kjqrlu"
         },
         {
           "Name": "label",
@@ -6035,18 +6675,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kQuPsgypMXC/KWB/7ernKXJplXsnGpQOjps//E4u2cg="
+          "Value": "sha256-SbFsNX18n/bJq8/fgiNhGUmQEoIjg40CG3IBLSacCkY="
         }
       ]
     },
     {
-      "Route": "css/site.nem8dth4c5.css",
-      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\ow0stnnm31-nem8dth4c5.br",
+      "Route": "css/site.jxg4kjqrlu.css",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\ow0stnnm31-jxg4kjqrlu.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.000574712644"
+          "Quality": "0.000448028674"
         }
       ],
       "ResponseHeaders": [
@@ -6056,15 +6696,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1739"
+          "Value": "2231"
         },
         {
           "Name": "ETag",
-          "Value": "\"NcSD05HXiRrwrL/6ezBpwei4CVieOE5NbNamT8H9q48=\""
+          "Value": "\"YZxXNBcHJsk8qHlce5NSaF9Pg3kJJJHZYnjDh0e8zjc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Nov 2025 16:11:03 GMT"
+          "Value": "Mon, 24 Nov 2025 23:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6084,13 +6724,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"kQuPsgypMXC/KWB/7ernKXJplXsnGpQOjps//E4u2cg=\""
+          "Value": "W/\"SbFsNX18n/bJq8/fgiNhGUmQEoIjg40CG3IBLSacCkY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nem8dth4c5"
+          "Value": "jxg4kjqrlu"
         },
         {
           "Name": "label",
@@ -6098,12 +6738,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kQuPsgypMXC/KWB/7ernKXJplXsnGpQOjps//E4u2cg="
+          "Value": "sha256-SbFsNX18n/bJq8/fgiNhGUmQEoIjg40CG3IBLSacCkY="
         }
       ]
     },
     {
-      "Route": "css/site.nem8dth4c5.css",
+      "Route": "css/site.jxg4kjqrlu.css",
       "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6113,7 +6753,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9337"
+          "Value": "12732"
         },
         {
           "Name": "Content-Type",
@@ -6121,11 +6761,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kQuPsgypMXC/KWB/7ernKXJplXsnGpQOjps//E4u2cg=\""
+          "Value": "\"SbFsNX18n/bJq8/fgiNhGUmQEoIjg40CG3IBLSacCkY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Nov 2025 16:11:03 GMT"
+          "Value": "Mon, 24 Nov 2025 23:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6135,7 +6775,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nem8dth4c5"
+          "Value": "jxg4kjqrlu"
         },
         {
           "Name": "label",
@@ -6143,13 +6783,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kQuPsgypMXC/KWB/7ernKXJplXsnGpQOjps//E4u2cg="
+          "Value": "sha256-SbFsNX18n/bJq8/fgiNhGUmQEoIjg40CG3IBLSacCkY="
         }
       ]
     },
     {
-      "Route": "css/site.nem8dth4c5.css.br",
-      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\ow0stnnm31-nem8dth4c5.br",
+      "Route": "css/site.jxg4kjqrlu.css.br",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\ow0stnnm31-jxg4kjqrlu.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6158,7 +6798,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1739"
+          "Value": "2231"
         },
         {
           "Name": "Content-Type",
@@ -6166,11 +6806,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NcSD05HXiRrwrL/6ezBpwei4CVieOE5NbNamT8H9q48=\""
+          "Value": "\"YZxXNBcHJsk8qHlce5NSaF9Pg3kJJJHZYnjDh0e8zjc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Nov 2025 16:11:03 GMT"
+          "Value": "Mon, 24 Nov 2025 23:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6188,7 +6828,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nem8dth4c5"
+          "Value": "jxg4kjqrlu"
         },
         {
           "Name": "label",
@@ -6196,13 +6836,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-NcSD05HXiRrwrL/6ezBpwei4CVieOE5NbNamT8H9q48="
+          "Value": "sha256-YZxXNBcHJsk8qHlce5NSaF9Pg3kJJJHZYnjDh0e8zjc="
         }
       ]
     },
     {
-      "Route": "css/site.nem8dth4c5.css.gz",
-      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\ow0stnnm31-nem8dth4c5.gz",
+      "Route": "css/site.jxg4kjqrlu.css.gz",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\ow0stnnm31-jxg4kjqrlu.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6211,7 +6851,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2130"
+          "Value": "2702"
         },
         {
           "Name": "Content-Type",
@@ -6219,11 +6859,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z1p6YrkRHQnfRlQ+kbRPmnxGIvOunnEOWQRXMQYLDb8=\""
+          "Value": "\"rVtPl7duHA0uYw2bhNnx5AIodrcD9fMq85Blp3BegJE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Nov 2025 16:11:03 GMT"
+          "Value": "Mon, 24 Nov 2025 23:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6241,7 +6881,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nem8dth4c5"
+          "Value": "jxg4kjqrlu"
         },
         {
           "Name": "label",
@@ -6249,7 +6889,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-z1p6YrkRHQnfRlQ+kbRPmnxGIvOunnEOWQRXMQYLDb8="
+          "Value": "sha256-rVtPl7duHA0uYw2bhNnx5AIodrcD9fMq85Blp3BegJE="
         }
       ]
     },
@@ -6764,6 +7404,520 @@
         {
           "Name": "integrity",
           "Value": "sha256-jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8="
+        }
+      ]
+    },
+    {
+      "Route": "js/image-preview.jretmpgdjl.js",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\12lzoojxh1-jretmpgdjl.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001069518717"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "934"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6zrBUdaf+oNYA3YV6EgFT1JcLMtPcRFIOs1bPgnjHA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:10:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/wm0eebHdQ9XTM9FJn07Xc/dDryodsr9/U8nO2PQ4rg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jretmpgdjl"
+        },
+        {
+          "Name": "label",
+          "Value": "js/image-preview.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/wm0eebHdQ9XTM9FJn07Xc/dDryodsr9/U8nO2PQ4rg="
+        }
+      ]
+    },
+    {
+      "Route": "js/image-preview.jretmpgdjl.js",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\12lzoojxh1-jretmpgdjl.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.001364256480"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "732"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8UvI3UUlVhvcqPcPUn15bYiiRaB5Wb8Itod5k8bWa3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:10:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/wm0eebHdQ9XTM9FJn07Xc/dDryodsr9/U8nO2PQ4rg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jretmpgdjl"
+        },
+        {
+          "Name": "label",
+          "Value": "js/image-preview.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/wm0eebHdQ9XTM9FJn07Xc/dDryodsr9/U8nO2PQ4rg="
+        }
+      ]
+    },
+    {
+      "Route": "js/image-preview.jretmpgdjl.js",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\image-preview.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3187"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/wm0eebHdQ9XTM9FJn07Xc/dDryodsr9/U8nO2PQ4rg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:10:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jretmpgdjl"
+        },
+        {
+          "Name": "label",
+          "Value": "js/image-preview.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/wm0eebHdQ9XTM9FJn07Xc/dDryodsr9/U8nO2PQ4rg="
+        }
+      ]
+    },
+    {
+      "Route": "js/image-preview.jretmpgdjl.js.br",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\12lzoojxh1-jretmpgdjl.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "732"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8UvI3UUlVhvcqPcPUn15bYiiRaB5Wb8Itod5k8bWa3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:10:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jretmpgdjl"
+        },
+        {
+          "Name": "label",
+          "Value": "js/image-preview.js.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8UvI3UUlVhvcqPcPUn15bYiiRaB5Wb8Itod5k8bWa3I="
+        }
+      ]
+    },
+    {
+      "Route": "js/image-preview.jretmpgdjl.js.gz",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\12lzoojxh1-jretmpgdjl.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "934"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6zrBUdaf+oNYA3YV6EgFT1JcLMtPcRFIOs1bPgnjHA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:10:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jretmpgdjl"
+        },
+        {
+          "Name": "label",
+          "Value": "js/image-preview.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6zrBUdaf+oNYA3YV6EgFT1JcLMtPcRFIOs1bPgnjHA0="
+        }
+      ]
+    },
+    {
+      "Route": "js/image-preview.js",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\12lzoojxh1-jretmpgdjl.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001069518717"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "934"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6zrBUdaf+oNYA3YV6EgFT1JcLMtPcRFIOs1bPgnjHA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:10:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/wm0eebHdQ9XTM9FJn07Xc/dDryodsr9/U8nO2PQ4rg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/wm0eebHdQ9XTM9FJn07Xc/dDryodsr9/U8nO2PQ4rg="
+        }
+      ]
+    },
+    {
+      "Route": "js/image-preview.js",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\12lzoojxh1-jretmpgdjl.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.001364256480"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "732"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8UvI3UUlVhvcqPcPUn15bYiiRaB5Wb8Itod5k8bWa3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:10:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/wm0eebHdQ9XTM9FJn07Xc/dDryodsr9/U8nO2PQ4rg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/wm0eebHdQ9XTM9FJn07Xc/dDryodsr9/U8nO2PQ4rg="
+        }
+      ]
+    },
+    {
+      "Route": "js/image-preview.js",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\wwwroot\\js\\image-preview.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3187"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/wm0eebHdQ9XTM9FJn07Xc/dDryodsr9/U8nO2PQ4rg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:10:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/wm0eebHdQ9XTM9FJn07Xc/dDryodsr9/U8nO2PQ4rg="
+        }
+      ]
+    },
+    {
+      "Route": "js/image-preview.js.br",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\publish\\12lzoojxh1-jretmpgdjl.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "732"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8UvI3UUlVhvcqPcPUn15bYiiRaB5Wb8Itod5k8bWa3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:10:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8UvI3UUlVhvcqPcPUn15bYiiRaB5Wb8Itod5k8bWa3I="
+        }
+      ]
+    },
+    {
+      "Route": "js/image-preview.js.gz",
+      "AssetFile": "D:\\Projects\\AdvancedTodoLearningCards\\AdvancedTodoLearningCards\\obj\\Release\\net9.0\\compressed\\12lzoojxh1-jretmpgdjl.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "934"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6zrBUdaf+oNYA3YV6EgFT1JcLMtPcRFIOs1bPgnjHA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 23:10:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6zrBUdaf+oNYA3YV6EgFT1JcLMtPcRFIOs1bPgnjHA0="
         }
       ]
     },

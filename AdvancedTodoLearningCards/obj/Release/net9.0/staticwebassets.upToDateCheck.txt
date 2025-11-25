@@ -3,6 +3,8 @@ D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\wwwroot\lib\jque
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\wwwroot\js\image-preview.js
+D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\wwwroot\css\admin.css
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -62,9 +64,11 @@ D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\wwwroot\js\notif
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\wwwroot\lib\jquery-validation\dist\additional-methods.js
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\wwwroot\lib\jquery-validation\LICENSE.md
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\wwwroot\lib\jquery\dist\jquery.slim.min.map
+wwwroot\css\admin.css
 wwwroot\css\notifications.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\js\image-preview.js
 wwwroot\js\notifications.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

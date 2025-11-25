@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdvancedTodoLearningCards")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9a0e47d513664c2cd7cdb842c863d1cf69aa781")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+029a74f18d599d4d263d34465e60b01eeba12e09")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdvancedTodoLearningCards")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdvancedTodoLearningCards")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

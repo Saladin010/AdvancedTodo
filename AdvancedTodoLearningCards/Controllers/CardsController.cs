@@ -72,7 +72,8 @@ namespace AdvancedTodoLearningCards.Controllers
                     UserId = GetUserId(),
                     Title = model.Title,
                     Content = model.Content,
-                    Difficulty = model.Difficulty
+                    Difficulty = model.Difficulty,
+                    ImageUrl = model.ImageUrl
                 };
 
                 // Process tags
@@ -109,6 +110,7 @@ namespace AdvancedTodoLearningCards.Controllers
                 Title = card.Title,
                 Content = card.Content,
                 Difficulty = card.Difficulty,
+                ImageUrl = card.ImageUrl,
                 TagsString = card.Tags != null
                     ? string.Join(", ", JsonSerializer.Deserialize<string[]>(card.Tags) ?? Array.Empty<string>())
                     : string.Empty
@@ -138,6 +140,7 @@ namespace AdvancedTodoLearningCards.Controllers
                 card.Title = model.Title;
                 card.Content = model.Content;
                 card.Difficulty = model.Difficulty;
+                card.ImageUrl = model.ImageUrl;
 
                 // Process tags
                 if (!string.IsNullOrWhiteSpace(model.TagsString))
@@ -272,7 +275,8 @@ namespace AdvancedTodoLearningCards.Controllers
                 IntervalDays = card.Schedule?.IntervalDays,
                 EaseFactor = card.Schedule?.EaseFactor,
                 ReviewCount = card.Schedule?.ReviewCount ?? 0,
-                IsDueToday = card.Schedule?.NextReviewAt <= DateTime.UtcNow
+                IsDueToday = card.Schedule?.NextReviewAt <= DateTime.UtcNow,
+                ImageUrl = card.ImageUrl
             };
         }
     }

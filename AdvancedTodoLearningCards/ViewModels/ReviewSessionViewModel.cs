@@ -25,6 +25,7 @@ namespace AdvancedTodoLearningCards.ViewModels
         public CardDifficulty Difficulty { get; set; }
         public int? LastInterval { get; set; }
         public DateTime? LastReviewedAt { get; set; }
+        public string? ImageUrl { get; set; }
     }
 
     public class ReviewResultViewModel
@@ -60,5 +61,6 @@ namespace AdvancedTodoLearningCards.ViewModels
         public DateTime NextReviewAt { get; set; }
         public int DaysUntilReview { get; set; }
         public CardDifficulty Difficulty { get; set; }
+        public string? ImageUrl { get; set; }
     }
 }
