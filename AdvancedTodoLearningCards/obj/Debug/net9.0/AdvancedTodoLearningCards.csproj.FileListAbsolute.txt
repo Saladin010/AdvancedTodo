@@ -313,4 +313,3 @@ D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\bin\Debug\net9.0
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\compressed\ow0stnnm31-jxg4kjqrlu.gz
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\compressed\12lzoojxh1-jretmpgdjl.gz
 D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\compressed\206044q1qr-w9zj08miv6.gz
-D:\Projects\AdvancedTodoLearningCards\AdvancedTodoLearningCards\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
